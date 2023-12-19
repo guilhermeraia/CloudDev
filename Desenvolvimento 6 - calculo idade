@@ -1,0 +1,16 @@
+nome = str(input("Olá, por favor digite seu nome "))
+
+faca = True
+
+while (faca == True):
+  print("Agora, digite o ano de seu nascimento ")
+  try:
+    ano_nasc = int(input())
+    if (ano_nasc < 1922) or (ano_nasc > 2022):
+      print("O ano de nascimento precisa estar no intervalo entre 1922 e 2022")
+    else:
+      idade = 2023 - ano_nasc
+      print("A sua idade,", nome_completo, ", é", idade)
+    faca = False
+  except:
+    print("Digite apenas números inteiros")
